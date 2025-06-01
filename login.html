@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar Sesión - Bon Voyage</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container login-container">
+        <h1>INICIAR SESIÓN</h1>
+        {% if error %}<p class="error">{{ error }}</p>{% endif %}
+        <form method="post">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="usuario..." required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="contraseña..." required>
+            </div>
+            <button type="submit" class="btn">INICIAR SESIÓN</button>
+        </form>
+        <p class="register-link">¿No tienes cuenta? <a href="/register">Regístrate</a></p>
+    </div>
+</body>
+</html>

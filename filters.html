@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtros - Bon Voyage</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container search-container">
+    <h2>Define filtros</h2>
+    <form method="post">
+      <div class="input-group">
+        <input type="number" name="max_price" placeholder="Precio máximo" required>
+      </div>
+      <div class="input-group">
+        <input type="number" name="min_duration" placeholder="Duración mínima (Dias)" required>
+      </div>
+      <div class="input-group">
+        <input type="number" name="max_duration" placeholder="Duración máxima (Dias)" required>
+      </div>
+      <button type="submit" class="btn">
+        <span class="icon">⏱️</span> VER RECOMENDACIONES
+      </button>
+    </form>
+  </div>
+</body>
+</html>
