@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buscar Destinos - Bon Voyage</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container search-container">
+        <h2>Encuentra viajes recomendados solo para ti!</h2>
+        <form method="post">
+            <div class="destinations-list">
+                {% for d in options %}
+                <label class="checkbox">
+                    <input type="checkbox" name="destinations" value="{{ d }}"> {{ d }}
+                </label>
+                {% endfor %}
+            </div>
+            <button type="submit" class="btn">
+                <span class="icon">🔍</span> BUSCAR
+            </button>
+        </form>
+    </div>
+</body>
+</html>
