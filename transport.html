@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transporte - Bon Voyage</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container search-container">
+    <h2>Selecciona tu medio de transporte</h2>
+    <form method="post">
+      <div class="destinations-list">
+        {% for t in options %}
+        <label class="checkbox">
+          <input type="checkbox" name="transports" value="{{ t }}"> {{ t }}
+        </label>
+        {% endfor %}
+      </div>
+      <button type="submit" class="btn">
+        <span class="icon">🛫</span> CONTINUAR
+      </button>
+    </form>
+  </div>
+</body>
+</html>
