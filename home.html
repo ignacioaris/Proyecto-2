@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bon Voyage - Inicio</title>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    /* Estilos específicos para los botones en Home */
+    .home-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .home-container h1 {
+      color: #fff;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+    .home-options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
+    }
+    .btn-option {
+      display: inline-block;
+      width: 280px;
+      padding: 20px 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #203A55;
+      background: rgba(255, 255, 255, 0.9);
+      border: 3px solid #203A55;
+      border-radius: 10px;
+      transition: background 0.3s, color 0.3s;
+      text-align: center;
+    }
+    .btn-option:hover {
+      background: #203A55;
+      color: #fff;
+    }
+    .btn-search {
+      /* Opcional: color o icono adicional */
+    }
+    .btn-personalized {
+      /* Opcional: color o icono adicional */
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container home-container">
+    <h1>¿Qué deseas hacer?</h1>
+    <div class="home-options">
+      <a href="/search" class="btn-option btn-search">
+        🔍 Buscar un Tour
+      </a>
+      <a href="/personalized" class="btn-option btn-personalized">
+        ✨ Recomendaciones Personalizadas
+      </a>
+    </div>
+  </div>
+</body>
+</html>
