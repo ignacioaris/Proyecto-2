@@ -34,3 +34,13 @@ se deben subir los archivos .csv compartidos al proyecto en neo4j y correr los s
 * para que el query sea exitoso se debe cambiar la ruta del archivo por la correcta (esta se obtiene desde la informacin del documento en neo4j)
 
 * La base de datos inicialmente no cuenta con ningun usuario por lo que sera necesario registrarse la primera vez que se corra el programa
+
+
+
+
+
+
+* videos de pruebas con usuarios:
+  - https://drive.google.com/file/d/1SSpIwn8wtfzGDPhkPTMa99EIC79iSoWm/view?usp=share_link
+  - https://drive.google.com/file/d/1rzqZd1GEAutSjyxsk-JFFQgsQDZiAltm/view?usp=share_link
+  
