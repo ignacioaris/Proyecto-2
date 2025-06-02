@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recomendaciones - Bon Voyage</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container rec-container">
+    <div class="cards">
+      {% for rec in recommendations %}
+      <div class="card">
+        <div class="title">{{ rec.name }}</div>
+        <div class="price">${{ rec.price }}</div>
+        <div class="duration">Duración: {{ rec.duration }} dias</div>
+        <div class="details">Destinos: {{ rec.details|join(', ') }}</div>
+        <form action="/select" method="post">
+          <input type="hidden" name="tour_name" value="{{ rec.name }}">
+          <button type="submit" class="btn-select">Seleccionar</button>
+        </form>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>
